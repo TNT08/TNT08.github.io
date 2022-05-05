@@ -27,7 +27,7 @@
 <meta property="og:description" content="温馨提示 万能的Tab键 及?需英文状态下—-尽量不简写 ！！！  no ip domain-lookup（关闭域名解析 否则命令输入错误后默认域名解析 会出现假死）  三个模式 name&gt; 用户模式enable 进入特权模式 disable exit 退出 logout 退出  name# 特权模式configure terminal 进入全局配置模式 show 显示  name(con">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-05T09:11:10.000Z">
-<meta property="article:modified_time" content="2022-05-05T14:46:23.447Z">
+<meta property="article:modified_time" content="2022-05-05T14:55:40.293Z">
 <meta property="article:author" content="Jiaosss and friend">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
@@ -324,7 +324,7 @@
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">276</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">332</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -523,6 +523,13 @@
 <p>name(config-if)#no shutdown</p>
 <hr>
 <p>PC telnet ip地址</p>
+<h1 id="vlan创建和配置"><a href="#vlan创建和配置" class="headerlink" title="vlan创建和配置"></a>vlan创建和配置</h1><hr>
+<p>name(config)#vlan 参数（创建vlan)</p>
+<p>name(config)#interface fastEthernet 参数（进入接口）</p>
+<p>name(config-if)#switchport mode access （进入模式吧）</p>
+<p>name(config-if)#switchport access vlan 参数 （分配vlan）</p>
+<p>(config-if)#exit</p>
+<p>name#show vlan brief （查看vlan）</p>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </article>
     <!-- license -->
@@ -531,7 +538,7 @@
             <p>原文作者：<a href="http://example.com">Jiaosss and friend</a>
             <p>原文链接：<a href="http://example.com/2022/05/05/cisco2/">http://example.com/2022/05/05/cisco2/</a>
             <p>发表日期：<a href="http://example.com/2022/05/05/cisco2/">May 5th 2022, 5:11:10 pm</a>
-            <p>更新日期：<a href="http://example.com/2022/05/05/cisco2/">May 5th 2022, 10:46:23 pm</a>
+            <p>更新日期：<a href="http://example.com/2022/05/05/cisco2/">May 5th 2022, 10:55:40 pm</a>
             <p>版权声明：未经授权<a rel="license noopener" target="_blank" href="https://tnt08.github.io/">禁止转载</a>！！！</p>
         </div>
     
@@ -669,7 +676,7 @@
                 <div class="toc-catalog">
                     <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
                 </div>
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%A9%E9%A6%A8%E6%8F%90%E7%A4%BA"><span class="toc-number">1.</span> <span class="toc-text">温馨提示</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%87%E8%83%BD%E7%9A%84Tab%E9%94%AE-%E5%8F%8A"><span class="toc-number">1.1.</span> <span class="toc-text">万能的Tab键 及?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#no-ip-domain-lookup"><span class="toc-number">1.2.</span> <span class="toc-text">no ip domain-lookup</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E4%B8%AA%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">三个模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#name-gt-%E7%94%A8%E6%88%B7%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.1.</span> <span class="toc-text">name&gt; 用户模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#name-%E7%89%B9%E6%9D%83%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.2.</span> <span class="toc-text">name# 特权模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#name-config-%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.3.</span> <span class="toc-text">name(config)# 全局配置模式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E4%B8%AA%E5%AF%86%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">三个密码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#console"><span class="toc-number">3.1.</span> <span class="toc-text">console</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E8%BF%9B%E5%85%A5%E7%89%B9%E6%9D%83"><span class="toc-number">3.2.</span> <span class="toc-text">用户进入特权</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E7%BB%88%E7%AB%AF%E5%AF%86%E7%A0%81"><span class="toc-number">3.3.</span> <span class="toc-text">远程终端密码</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B8%A9%E9%A6%A8%E6%8F%90%E7%A4%BA"><span class="toc-number">1.</span> <span class="toc-text">温馨提示</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%87%E8%83%BD%E7%9A%84Tab%E9%94%AE-%E5%8F%8A"><span class="toc-number">1.1.</span> <span class="toc-text">万能的Tab键 及?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#no-ip-domain-lookup"><span class="toc-number">1.2.</span> <span class="toc-text">no ip domain-lookup</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E4%B8%AA%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">三个模式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#name-gt-%E7%94%A8%E6%88%B7%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.1.</span> <span class="toc-text">name&gt; 用户模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#name-%E7%89%B9%E6%9D%83%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.2.</span> <span class="toc-text">name# 特权模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#name-config-%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.3.</span> <span class="toc-text">name(config)# 全局配置模式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E4%B8%AA%E5%AF%86%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">三个密码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#console"><span class="toc-number">3.1.</span> <span class="toc-text">console</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E8%BF%9B%E5%85%A5%E7%89%B9%E6%9D%83"><span class="toc-number">3.2.</span> <span class="toc-text">用户进入特权</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E7%BB%88%E7%AB%AF%E5%AF%86%E7%A0%81"><span class="toc-number">3.3.</span> <span class="toc-text">远程终端密码</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vlan%E5%88%9B%E5%BB%BA%E5%92%8C%E9%85%8D%E7%BD%AE"><span class="toc-number">4.</span> <span class="toc-text">vlan创建和配置</span></a></li></ol>
             </div>
         
         <!-- sidebar -->
